@@ -17,11 +17,11 @@ var coinList = &cobra.Command{
 		if err != nil {
 			fmt.Println(err)
 		}
-		printCoinsTable(coins)
+		printTable(coins)
 	},
 }
 
-func printCoinsTable(coins []client.CoinList) {
+func printTable(coins []client.CoinList) {
 	headerFmt := color.New(color.FgGreen, color.Underline).SprintfFunc()
 	columnFmt := color.New(color.FgYellow).SprintfFunc()
 	tbl := table.New("ID", "Name", "Symbol")
