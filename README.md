@@ -1,0 +1,2 @@
+# coingecko-cli
+coingecko-cli
